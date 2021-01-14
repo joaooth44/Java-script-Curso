@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formando strings</title>
+    <style>
+    body{
+        font:10 pt arial;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        //mostrar o salario
+     
+        var salario = Number(window.prompt('informe seu salario'))
+        document.writeln('Seu salario é '+salario+ '</br>') 
+        document.writeln(salario.toFixed(2))
+        document.writeln('</br>')
+        document.writeln(salario.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}))
+       //conversao em dolar 
+        document.writeln('</br>')
+         var dolar = salario/5.19
+       document.write('O seu salario em dolar é '+(dolar.toLocaleString('pt-br',{style: 'currency', currency: 'usd'})))
+        //conversao em euro 
+        document.writeln('</br>')
+        var euro = salario/6.41
+        document.write('o seu salario em euros é '+(euro.toLocaleString('pt-br',{style:'currency',currency: 'eur'})))
+        // comversao em libras
+        document.writeln('</br>')
+        var libra = salario/7.20
+        document.writeln('o seu salario em libra esterlinas é '+(libra.toLocaleString('pt-br', {style :'currency', currency : 'eur'})))
+
+    </script>
+</body>
+</html>
