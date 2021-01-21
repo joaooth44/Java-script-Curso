@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador</title>
+    
+    <style>
+        body{
+            font: normal 15pt arial;
+            background-color: rgb(80, 65, 95);
+            color:white
+       }
+    </style>
+</head>
+<body>
+    <script>
+        
+        var a = 5+3 //8
+        document.write('Somando 5+3 o valor é igual a '+a+'</br>')
+        var b = a % 5 //3
+        document.write('o resto da divisão de '+a+' por 5 é igual a '+b+'</br>')
+        var c = 5*b**2 //45
+        document.write('A opeção 5*b**2 sendo que b é igual a '+b+' a soma final é '+c+'</br>')
+        var d = 10-a/2 //6
+        document.write('A opeção 10-a/2 sendo que a é igual a '+a+' a soma final é '+d+'</br>')
+        var e = 6*2/d //2
+        document.write('A opeção  6*2/d sendo que d é igual a '+d+' a soma final é '+e+'</br>')
+        var f = b%e + 4/e //3 
+        document.write('A opeção b%e+4/e sendo que b é igual a '+b+' e a variavel e igual a '+e+' a soma final é '+f+'</br>')
+        
+        
+        document.write('</br>')
+        document.write('auto atribuição</br>')
+        document.write('</br>')
+
+        // auto atribuição
+        var n = 3 
+        document.write('variavel n = '+n+ '</br>')
+        n+=4
+        document.write('somando 4 em n fica = '+n+ '</br>')
+        n-=5
+        document.write('subtraindo 5 em n fica = '+n+ '</br>')
+        n*=4
+        document.write('multiplicando n vezes igual é igual a = '+n+ '</br>')
+        n/=2
+        document.write('divindo n por 2 fica = '+n+ '</br>')
+          n**=2
+        document.write('a exponenciação de n ao quadrado fica = '+n+ '</br>')
+        n%=5
+        document.write('pegando o resto da divisão de n por 5 fica  '+n+ '</br>')
+
+        // variaveis de incremento
+        document.write('</br>')
+        document.write('variaveis de incremento</br>')
+        document.write('</br>')
+        x=5
+        document.write('a variavel x é igual a '+x+'</br>')
+        ++x
+        document.write('usando o incremento fica '+x+'</br>') 
+        --x
+        document.write('usando o decremento fica '+x) 
+
+
+    </script>   
+</body>
+</html>
