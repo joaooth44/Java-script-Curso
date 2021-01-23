@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação de dois Numeros</title>
+</head>
+<body>
+    <input type="number" name="muln1" id="muln1">
+    <input type="number" name="muln2" id="muln2">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <div id="res">Resultado aqui</div>
+    <script>
+        function multiplicar(){
+            var m1=document.querySelector('input#muln1')
+            var m2=document.querySelector('input#muln2')
+            var res=document.querySelector('div#res')
+
+            var n1=Number(m1.value)
+            var n2 = Number(m2.value)
+            var mult=n1*n2
+
+            res.innerHTML=`O produto entre ${n1} e ${n2} = ${mult}`
+        }
+    </script>
+</body>
+</html>

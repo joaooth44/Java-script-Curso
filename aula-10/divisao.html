@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divisao</title>
+</head>
+<body>
+    <input type="number" name="dxtn1" id="dxtn1"> -
+    <input type="number" name="dxtn2" id="dxtn2">
+    <input type="button" value="dividir" onclick="dividir()">
+    <div id="res">resultado aqui</div>
+    <script>
+        function dividir(){
+        var d1= document.getElementById('dxtn1')
+        var d2= document.getElementById('dxtn2')
+        var res=document.getElementById('res')
+
+        var n1 = Number(d1.value)
+        var n2 = Number(d2.value)
+
+        var div=n1/n2
+
+        res.innerHTML=`a divisao entre ${n1} e ${n2} é igual a ${div}`
+        }
+    </script>
+</body>
+</html>

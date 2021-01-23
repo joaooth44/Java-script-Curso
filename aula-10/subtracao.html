@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtração com DOM</title>
+    <style>
+        div#sub{
+            font:normal 22pt Helvetica;
+            width: 400px;
+            height: 400px;
+            margin-top: 50px;
+            background: rgb(20, 163, 246);
+            line-height: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subtraindo dois numeros</h1>
+    <input type="number" name="subn1" id="subn1">
+    <h1>+</h1>
+    <input type="number" name="subn2" id="subn2">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <div id="sub">Resultado aqui</div>
+    <script>
+        function subtrair(){
+        var s1=document.getElementById('subn1')
+        var s2=document.querySelector('input#subn2')
+        var res=document.querySelector('div#sub')
+        
+        var n1 =Number(s1.value)
+        var n2 =Number(s2.value)
+        var soma= n1-n2
+        
+        res.innerHTML=`A subtração é igual a  ${soma}`
+
+    }        
+    </script>
+</body>
+</html>
