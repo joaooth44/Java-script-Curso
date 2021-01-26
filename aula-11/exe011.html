@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de velocidade </title>
+    <style>
+        div#cond{
+            font: normal 20pt arial;
+            margin-top: 100px;
+            height: 200px;
+            width: 800px;
+            line-height: 200px;
+            text-align: left;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aqui é o Detran e vou te multar </h1>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Conferir" onclick="checar()">
+    <div id="cond">aqui vai a descisão</div>
+    <script>
+        function checar(){
+        var vel = document.getElementById('vel')
+        var res =document.getElementById('cond')
+        var v=Number(vel.value)
+        if(v>60){
+            res.innerHTML=`com a velocidade ${v}KM/H voce esta multado <strong>MOTHERFUCKER</strong>`
+            res.style.background='red'
+        }
+        else{
+            res.innerHTML=` com a velocidade ${v}KM/H voce se salvou por pouco ate a proxima`
+            res.style.background='green'
+
+        }
+    }
+    </script>
+</body>
+</html>

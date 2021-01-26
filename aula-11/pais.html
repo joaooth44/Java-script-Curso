@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro</title>
+    <style>
+        body{
+            font: normal 20pt Verdana;
+            background-image: url("Área de Trabalho");
+        }
+        input{
+            font:normal 20pt helvetica;
+        }
+        div#res{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informe o pais que voce mora </h1>
+    <input type="text" name="txtpa" id="txtpa">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">aqui vem o resutado</div>
+    <script>
+        function verificar(){
+        var pais =window.document.querySelector('input#txtpa')
+        var res= document.getElementById('res')
+        var p=String(pais.value)
+        if(p=='brasil'){
+         res.innerText=`Voce é do ${p} portanto é brasileiro`
+         res.style.background='green'
+        }
+        else{
+            res.innerHTML=`Voce é do ${p} portanto é gringo` 
+            res.style.background='red'
+        }
+    }
+    </script>
+</body>
+</html>
